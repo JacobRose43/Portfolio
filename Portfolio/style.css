@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+body {
+	background: black;
+}
+
+html {
+	user-select: none;
+	cursor: none;
+}
+
+.left-text {
+	user-select: none;
+	font-family: "Lato", sans-serif;
+	justify-content: center;
+	display: flex;
+	cursor: none;
+	margin-right: 0;
+}
+
+.left-text-container {
+	font-size: 90px;
+}
+
+p {
+	margin: 0;
+}
+
+p:nth-child(1),
+p:nth-child(2),
+p:nth-child(3),
+p:nth-child(4),
+p:nth-child(5) {
+	color: white;
+	transition: 0.5s;
+}
+
+.inner-cursor {
+	position: fixed;
+	width: 10px;
+	height: 10px;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	mix-blend-mode: difference;
+	border-radius: 50%;
+	pointer-events: none;
+	transition: width 0.5s, height 0.5s;
+}
+
+.inner-cursor.grow {
+	width: 25px;
+	height: 25px;
+	transition: width 0.5s, height 0.5s;
+}
+
+.outer-cursor {
+	position: fixed;
+	width: 25px;
+	height: 25px;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	mix-blend-mode: difference;
+	border-radius: 5px 0.1s;
+	pointer-events: 0.1ms;
+	transition: 0.1s;
+}
+
+body:active > .outer-cursor {
+	backdrop-filter: blur(10px);
+	width: 250px;
+	height: 250px;
+}
+
+.lorem {
+	position: absolute;
+	color: white;
+	font-size: 16px;
+	margin: 30px;
+	top: 3000px;
+}
