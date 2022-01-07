@@ -1,36 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
 
-body {
-	background: black;
-}
-
 html {
 	user-select: none;
 	cursor: none;
 }
 
-.left-text {
-	user-select: none;
-	font-family: "Lato", sans-serif;
-	justify-content: center;
-	display: flex;
-	cursor: none;
-	margin-right: 0;
+body {
+	background: black;
 }
 
-.left-text-container {
-	font-size: 90px;
+body:active > .outer-cursor {
+	opacity: 0.3;
+	backdrop-filter: blur(10px);
+	width: 250px;
+	height: 250px;
 }
 
 p {
 	margin: 0;
 }
 
-p:nth-child(1),
-p:nth-child(2),
-p:nth-child(3),
-p:nth-child(4),
-p:nth-child(5) {
+.main-section {
+	user-select: none;
+	font-family: "Lato", sans-serif;
+	justify-content: space-between;
+	display: flex;
+	cursor: none;
+}
+
+.left-container {
+	font-size: 90px;
+	font-weight: 100;
+	margin: 75px 0 75px 75px;
+	height: 550px;
+	width: 550px;
+}
+
+.left-container p:nth-child(1),
+.left-container p:nth-child(2),
+.left-container p:nth-child(3),
+.left-container p:nth-child(4),
+.left-container p:nth-child(5) {
+	color: white;
+	transition: 0.5s;
+}
+
+.right-container {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	font-size: 50px;
+	margin: 100px 100px 100px 0;
+	border: 1px solid white;
+	transition: 0.5s;
+}
+
+.right-container p {
+	font-weight: 700;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 0 25px 50px;
 	color: white;
 	transition: 0.5s;
 }
@@ -63,12 +93,6 @@ p:nth-child(5) {
 	border-radius: 5px 0.1s;
 	pointer-events: 0.1ms;
 	transition: 0.1s;
-}
-
-body:active > .outer-cursor {
-	backdrop-filter: blur(10px);
-	width: 250px;
-	height: 250px;
 }
 
 .lorem {
