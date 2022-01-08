@@ -47,6 +47,8 @@ p {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+/*How to delete warning/problem  */
+
 .left-container p:nth-child(1) {
 	font-size: 80px;
 	background-image: linear-gradient(180deg, #000000, #464646);
