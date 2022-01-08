@@ -10,7 +10,7 @@ body {
 }
 
 body:active > .outer-cursor {
-	opacity: 0.3;
+	opacity: 0.8;
 	backdrop-filter: blur(10px);
 	width: 250px;
 	height: 250px;
@@ -41,8 +41,31 @@ p {
 .left-container p:nth-child(3),
 .left-container p:nth-child(4),
 .left-container p:nth-child(5) {
+	text-align: center;
 	color: white;
 	transition: 0.5s;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.left-container p:nth-child(1) {
+	font-size: 80px;
+	background-image: linear-gradient(180deg, #000000, #464646);
+}
+.left-container p:nth-child(2) {
+	font-size: 90px;
+	background-image: linear-gradient(180deg, #464646, #797979);
+}
+.left-container p:nth-child(3) {
+	font-size: 100px;
+	background-image: linear-gradient(180deg, #797979, #a7a7a7);
+}
+.left-container p:nth-child(4) {
+	font-size: 110px;
+	background-image: linear-gradient(180deg, #a7a7a7, #ffffff);
+}
+.left-container p:nth-child(5) {
+	font-size: 100px;
+	background-image: linear-gradient(180deg, #ffffff, #000000);
 }
 
 .right-container {
@@ -67,6 +90,7 @@ p {
 
 .inner-cursor {
 	position: fixed;
+	z-index: 1;
 	width: 10px;
 	height: 10px;
 	transform: translate(-50%, -50%);

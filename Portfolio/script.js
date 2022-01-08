@@ -17,6 +17,7 @@ function moveCursor(e) {
 
 rc.addEventListener("mouseover", function () {
 	oc.style.backgroundColor = "white";
+	oc.style.display = "none";
 	ic.style.width = "60px";
 	ic.style.height = "60px";
 	rc.style.backgroundColor = "white";
@@ -25,6 +26,7 @@ rc.addEventListener("mouseover", function () {
 
 rc.addEventListener("mouseleave", function () {
 	oc.style.backgroundColor = "transparent";
+	oc.style.display = "";
 	ic.style.width = "10px";
 	ic.style.height = "10px";
 	rc.style.backgroundColor = "black";
