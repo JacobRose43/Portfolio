@@ -32,3 +32,8 @@ rc.addEventListener("mouseleave", function () {
 	rc.style.backgroundColor = "black";
 	rctxt.style.color = "white";
 });
+
+rc.addEventListener("click", function () {
+	document.querySelector("body > section.main-section > div.right-container > p").style.color =
+		"white";
+});

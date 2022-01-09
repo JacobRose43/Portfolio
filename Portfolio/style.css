@@ -30,10 +30,10 @@ p {
 
 .left-container {
 	font-size: 90px;
-	font-weight: 100;
+	font-weight: 700;
 	margin: 75px 0 75px 75px;
-	height: 550px;
-	width: 550px;
+	height: 560px;
+	width: 560px;
 }
 
 .left-container p:nth-child(1),
@@ -45,9 +45,9 @@ p {
 	color: white;
 	transition: 0.5s;
 	-webkit-background-clip: text;
+	background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-/*How to delete warning/problem  */
 
 .left-container p:nth-child(1) {
 	font-size: 80px;
@@ -72,10 +72,10 @@ p {
 
 .right-container {
 	position: relative;
-	height: 500px;
-	width: 500px;
+	height: 560px;
+	width: 560px;
 	font-size: 50px;
-	margin: 100px 100px 100px 0;
+	margin: 75px 75px 75px 0;
 	border: 1px solid white;
 	transition: 0.5s;
 }
