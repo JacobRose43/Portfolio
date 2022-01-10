@@ -9,13 +9,6 @@ body {
 	background: black;
 }
 
-body:active > .outer-cursor {
-	opacity: 0.8;
-	backdrop-filter: blur(10px);
-	width: 250px;
-	height: 250px;
-}
-
 p {
 	margin: 0;
 }
@@ -111,14 +104,15 @@ p {
 
 .outer-cursor {
 	position: fixed;
-	width: 25px;
-	height: 25px;
+	width: 250px;
+	height: 250px;
 	transform: translate(-50%, -50%);
-	border: 1px solid white;
 	mix-blend-mode: difference;
-	border-radius: 5px 0.1s;
+	border-radius: 50%;
 	pointer-events: 0.1ms;
 	transition: 0.1s;
+	backdrop-filter: blur(10px);
+	opacity: 0.8;
 }
 
 .lorem {

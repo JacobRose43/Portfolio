@@ -16,8 +16,6 @@ function moveCursor(e) {
 }
 
 rc.addEventListener("mouseover", function () {
-	oc.style.backgroundColor = "white";
-	oc.style.display = "none";
 	ic.style.width = "60px";
 	ic.style.height = "60px";
 	rc.style.backgroundColor = "white";
@@ -34,6 +32,5 @@ rc.addEventListener("mouseleave", function () {
 });
 
 rc.addEventListener("click", function () {
-	document.querySelector("body > section.main-section > div.right-container > p").style.color =
-		"white";
+	document.querySelector(".right-container > p").style.color = "white";
 });
